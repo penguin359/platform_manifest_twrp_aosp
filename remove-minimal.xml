@@ -23,24 +23,24 @@
     <remove-project name="device/generic/x86_64" />
     <remove-project name="device/google/atv" />
     <remove-project name="device/google/barbet" />
-    <remove-project name="device/google/barbet-kernel" />
     <remove-project name="device/google/barbet-sepolicy" />
-    <remove-project name="device/google/bonito" />
-    <remove-project name="device/google/bonito-kernel" />
-    <remove-project name="device/google/bonito-sepolicy" />
+    <remove-project name="device/google/bluejay" />
+    <remove-project name="device/google/bluejay-kernel" />
+    <remove-project name="device/google/bluejay-sepolicy" />
     <remove-project name="device/google/bramble" />
     <remove-project name="device/google/bramble-sepolicy" />
     <remove-project name="device/google/contexthub" />
     <remove-project name="device/google/coral" />
     <remove-project name="device/google/coral-kernel" />
     <remove-project name="device/google/coral-sepolicy" />
-    <remove-project name="device/google/crosshatch" />
-    <remove-project name="device/google/crosshatch-kernel" />
-    <remove-project name="device/google/crosshatch-sepolicy" />
-    <remove-project name="device/google/fuchsia" />
     <remove-project name="device/google/gs101" />
     <remove-project name="device/google/gs101-sepolicy" />
+    <remove-project name="device/google/gs201" />
+    <remove-project name="device/google/gs201-sepolicy" />
     <remove-project name="device/google/gs-common" />
+    <remove-project name="device/google/pantah" />
+    <remove-project name="device/google/pantah-kernel" />
+    <remove-project name="device/google/pantah-sepolicy" />
     <remove-project name="device/google/raviole" />
     <remove-project name="device/google/raviole-kernel" />
     <remove-project name="device/google/redbull" />
@@ -83,8 +83,6 @@
     <remove-project name="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" />
     <remove-project name="kernel/tests" />
 
-    <remove-project name="platform/compatibility/cdd" />
-
     <remove-project name="platform/cts" />
 
     <remove-project name="platform/developers/build" />
@@ -110,6 +108,7 @@
     <remove-project name="platform/external/armnn"  />
     <remove-project name="platform/external/bcc"  />
     <remove-project name="platform/external/blktrace"/>
+    <remove-project name="platform/external/bpftool"/>
     <remove-project name="platform/external/caliper"/>
     <remove-project name="platform/external/capstone"  />
     <remove-project name="platform/external/catch2"  />
@@ -140,7 +139,6 @@
     <remove-project name="platform/external/dokka"  />
     <remove-project name="platform/external/downloader"  />
     <remove-project name="platform/external/drm_hwcomposer"/>
-    <remove-project name="platform/external/drrickorang"/>
     <remove-project name="platform/external/dynamic_depth"  />
     <remove-project name="platform/external/easymock"/>
     <remove-project name="platform/external/eigen"  />
@@ -321,7 +319,6 @@
     <remove-project name="platform/external/python/ipaddress"  />
     <remove-project name="platform/external/python/jinja"  />
     <remove-project name="platform/external/python/markupsafe"  />
-    <remove-project name="platform/external/python/mock"  />
     <remove-project name="platform/external/python/oauth2client" />
     <remove-project name="platform/external/python/parse_type" />
     <remove-project name="platform/external/python/pyasn1" />
@@ -340,18 +337,22 @@
     <remove-project name="platform/external/robolectric-shadows"  />
     <remove-project name="platform/external/rootdev"/>
     <remove-project name="platform/external/rust/crates/arbitrary"  />
+    <remove-project name="platform/external/rust/crates/argh"  />
+    <remove-project name="platform/external/rust/crates/argh_derive"  />
+    <remove-project name="platform/external/rust/crates/argh_shared"  />
+    <remove-project name="platform/external/rust/crates/ash"  />
     <remove-project name="platform/external/rust/crates/async-stream"  />
     <remove-project name="platform/external/rust/crates/async-stream-impl"  />
     <remove-project name="platform/external/rust/crates/async-task"  />
     <remove-project name="platform/external/rust/crates/async-trait"  />
     <remove-project name="platform/external/rust/crates/atty"  />
+    <remove-project name="platform/external/rust/crates/base64"  />
     <remove-project name="platform/external/rust/crates/bencher"  />
     <remove-project name="platform/external/rust/crates/bstr"  />
     <remove-project name="platform/external/rust/crates/byteorder"  />
     <remove-project name="platform/external/rust/crates/bytes"  />
     <remove-project name="platform/external/rust/crates/cast"  />
     <remove-project name="platform/external/rust/crates/chrono"  />
-    <remove-project name="platform/external/rust/crates/crc32fast"  />
     <remove-project name="platform/external/rust/crates/codespan-reporting"  />
     <remove-project name="platform/external/rust/crates/criterion"  />
     <remove-project name="platform/external/rust/crates/criterion-plot"  />
@@ -460,7 +461,6 @@
     <remove-project name="platform/external/rust/crates/untrusted"  />
     <remove-project name="platform/external/rust/crates/url"  />
     <remove-project name="platform/external/rust/crates/uuid"  />
-    <remove-project name="platform/external/rust/crates/vmm_vhost"  />
     <remove-project name="platform/external/rust/crates/vsock"  />
     <remove-project name="platform/external/rust/crates/walkdir"  />
     <remove-project name="platform/external/rust/crates/weak-table"  />
@@ -475,7 +475,6 @@
     <remove-project name="platform/external/sfntly"/>
     <remove-project name="platform/external/shaderc/spirv-headers"  />
     <remove-project name="platform/external/shflags"/>
-    <remove-project name="platform/external/skqp" />
     <remove-project name="platform/external/sl4a"/>
     <remove-project name="platform/external/slf4j"/>
     <remove-project name="platform/external/smali"/>
@@ -508,7 +507,6 @@
     <remove-project name="platform/external/vboot_reference"/>
     <remove-project name="platform/external/virglrenderer"  />
     <remove-project name="platform/external/vixl"  />
-    <remove-project name="platform/external/vm_tools/p9"  />
     <remove-project name="platform/external/vogar"/>
     <remove-project name="platform/external/volley"/>
     <remove-project name="platform/external/vulkan-headers"  />
@@ -565,6 +563,7 @@
     <remove-project name="platform/hardware/google/gchips" />
     <remove-project name="platform/hardware/google/graphics/common" />
     <remove-project name="platform/hardware/google/graphics/gs101" />
+    <remove-project name="platform/hardware/google/graphics/gs201" />
     <remove-project name="platform/hardware/google/interfaces"/>
     <remove-project name="platform/hardware/google/pixel"/>
     <remove-project name="platform/hardware/google/pixel-sepolicy" />
@@ -608,28 +607,23 @@
     <remove-project name="platform/hardware/qcom/sm8150p/gps" />
     <remove-project name="platform/hardware/qcom/wlan"/>
     <remove-project name="platform/hardware/ril" />
-    <remove-project name="platform/hardware/samsung/nfc"/>
     <remove-project name="platform/hardware/st/nfc"/>
     <remove-project name="platform/hardware/st/secure_element"/>
     <remove-project name="platform/hardware/st/secure_element2"/>
     <remove-project name="platform/hardware/ti/am57x"/>
 
     <remove-project name="platform/packages/apps/BasicSmsReceiver"/>
-    <remove-project name="platform/packages/apps/Bluetooth" />
     <remove-project name="platform/packages/apps/Browser2" />
     <remove-project name="platform/packages/apps/Calendar" />
     <remove-project name="platform/packages/apps/Camera2"/>
     <remove-project name="platform/packages/apps/Car/Calendar"/>
     <remove-project name="platform/packages/apps/Car/Cluster"/>
     <remove-project name="platform/packages/apps/Car/DebuggingRestrictionController"/>
-    <remove-project name="platform/packages/apps/Car/Dialer"/>
     <remove-project name="platform/packages/apps/Car/Hvac"/>
     <remove-project name="platform/packages/apps/Car/LatinIME"/>
     <remove-project name="platform/packages/apps/Car/Launcher"/>
     <remove-project name="platform/packages/apps/Car/LinkViewer"/>
     <remove-project name="platform/packages/apps/Car/LocalMediaPlayer"/>
-    <remove-project name="platform/packages/apps/Car/Media"/>
-    <remove-project name="platform/packages/apps/Car/Messenger"/>
     <remove-project name="platform/packages/apps/Car/Notification"/>
     <remove-project name="platform/packages/apps/Car/Provision"/>
     <remove-project name="platform/packages/apps/Car/Radio"/>
@@ -638,8 +632,6 @@
     <remove-project name="platform/packages/apps/Car/SettingsIntelligence"/>
     <remove-project name="platform/packages/apps/Car/SystemUI"/>
     <remove-project name="platform/packages/apps/Car/SystemUpdater"/>
-    <remove-project name="platform/packages/apps/Car/libs"/>
-    <remove-project name="platform/packages/apps/Car/tests"/>
     <remove-project name="platform/packages/apps/CarrierConfig"/>
     <remove-project name="platform/packages/apps/CellBroadcastReceiver"/>
     <remove-project name="platform/packages/apps/CertInstaller"/>
@@ -697,7 +689,6 @@
     <remove-project name="platform/packages/modules/BootPrebuilt/5.10/arm64" />
     <remove-project name="platform/packages/modules/CaptivePortalLogin" />
     <remove-project name="platform/packages/modules/CellBroadcastService" />
-    <remove-project name="platform/packages/modules/Cronet" />
     <remove-project name="platform/packages/modules/ExtServices" />
     <remove-project name="platform/packages/modules/GeoTZ" />
     <remove-project name="platform/packages/modules/ModuleMetadata" />
@@ -751,14 +742,7 @@
     <remove-project name="platform/prebuilts/clang/host/darwin-x86"/>
     <remove-project name="platform/prebuilts/cmdline-tools" />
     <remove-project name="platform/prebuilts/devtools"/>
-    <remove-project name="platform/prebuilts/fuchsia_sdk" />
-    <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9"/>
-    <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9"/>
-    <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1"/>
-    <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9"/>
     <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
-    <remove-project name="platform/prebuilts/gdb/darwin-x86"/>
-    <remove-project name="platform/prebuilts/gdb/linux-x86"/>
     <remove-project name="platform/prebuilts/go/darwin-x86"/>
     <remove-project name="platform/prebuilts/gradle-plugin"/>
     <remove-project name="platform/prebuilts/jdk/jdk9" />
@@ -778,8 +762,6 @@
     <remove-project name="platform/prebuilts/module_sdk/StatsD" />
     <remove-project name="platform/prebuilts/module_sdk/Wifi" />
     <remove-project name="platform/prebuilts/ndk" />
-    <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5"/>
-    <remove-project name="platform/prebuilts/python/linux-x86/2.7.5" />
     <remove-project name="platform/prebuilts/qemu-kernel"/>
     <remove-project name="platform/prebuilts/remoteexecution-client" />
     <remove-project name="platform/prebuilts/runtime" />
@@ -788,7 +770,6 @@
 
     <remove-project name="platform/system/bpf"/>
     <remove-project name="platform/system/bpfprogs"/>
-    <remove-project name="platform/system/bt"/>
     <remove-project name="platform/system/connectivity/wificond"/>
     <remove-project name="platform/system/chre"/>
     <remove-project name="platform/system/iorap"/>
@@ -808,9 +789,6 @@
     <remove-project name="platform/test/mlts/benchmark" />
     <remove-project name="platform/test/mlts/models" />
     <remove-project name="platform/test/mts" />
-    <remove-project name="platform/test/vti/dashboard"/>
-    <remove-project name="platform/test/vti/fuzz_test_serving"/>
-    <remove-project name="platform/test/vti/test_serving"/>
     <remove-project name="platform/test/vts-testcase/fuzz"/>
     <remove-project name="platform/test/vts-testcase/hal-trace"/>
     <remove-project name="platform/test/vts-testcase/kernel"/>
@@ -837,18 +815,17 @@
     <remove-project name="platform/tools/idea"/>
     <remove-project name="platform/tools/motodev"/>
     <remove-project name="platform/tools/ndkports"/>
-    <remove-project name="platform/tools/repohooks"/>
     <remove-project name="platform/tools/security"/>
     <remove-project name="platform/tools/studio/cloud"/>
     <remove-project name="platform/tools/swt"/>
     <remove-project name="platform/tools/test/connectivity"/>
     <remove-project name="platform/tools/test/graphicsbenchmark"/>
+    <remove-project name="platform/tools/test/mobly_snippets"/>
     <remove-project name="platform/tools/test/openhst"/>
     <remove-project name="platform/tools/tradefederation/prebuilts"/>
     <remove-project name="platform/tools/treble"/>
     <remove-project name="platform/tools/trebuchet"/>
 
     <remove-project name="toolchain/benchmark"/>
-    <remove-project name="toolchain/llvm-project"  />
     <remove-project name="toolchain/pgo-profiles"/>
 </manifest>
